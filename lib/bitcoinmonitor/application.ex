@@ -8,7 +8,7 @@ defmodule Bitcoinmonitor.Application do
   def start(_type, _args) do
     # List all child processes to be supervised
     children = [
-      {Bitcoinmonitor.Feed , ["BTC-USD", "BTC-EUR", "BTC-GBP", "ETH-USD", "ETH-EUR"]}
+      {Bitcoinmonitor.Feed , ["BTC-GBP"]}
       # Starts a worker by calling: Bitcoinmonitor.Worker.start_link(arg)
       # {Bitcoinmonitor.Worker, arg},
     ]
